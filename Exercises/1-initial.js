@@ -1,6 +1,6 @@
 /**
  * Para correrlo desde console usemos el comando
- * `yarn run nodemon ./Exercises/1-initial.js`
+ * `yarn run ./Exercises/1-initial.js`
  *
  * Generemos un String que contenga un H2 y
  * nuestro nombre diciendo
@@ -8,8 +8,8 @@
  */
 const express = require('express')
 const app = express()
-const nombre = ''
-const template = ``
+const nombre = 'jasmo2'
+const template = `<h2>Hola ${nombre}</h2>`
 app.get('/', (req, res) => {
   res.send(template)
 })
