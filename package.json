@@ -6,6 +6,7 @@
   "scripts": {
     "ex:routes": "nodemon ./Exercises/2-rutas.js",
     "ex:template": "nodemon ./Exercises/3-vistas.js",
+    "middleware": "nodemon ./Middleware/logger.js",
     "routes": "nodemon ./Rutas/routes.js",
     "start": "nodemon index.js",
     "template": "nodemon ./Vistas/templates.js",
