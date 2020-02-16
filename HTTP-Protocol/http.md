@@ -68,4 +68,4 @@ Comúnmente es usada para pedir las paginas en nuestro navegador, aunque tambié
 
 #### Nuevamente volamos a la parte de NodeJS-Express para ver como se usa este protocolo con el servidor Web que vamos a hacer
 
-[NodeJS](../nodejs.md#ContinuaHTTP)
+[NodeJS](../readme.md#continuahttp)

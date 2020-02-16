@@ -5,6 +5,7 @@
  * que tipo de Verbo HTTP está ciendo usado en
  * ese llamado en especifico
  *
+ * `yarn ex:middleware`
  */
 
 const logger = (req, res, next) => {

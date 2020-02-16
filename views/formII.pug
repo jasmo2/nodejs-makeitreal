@@ -1,0 +1,9 @@
+html
+  include ./partials/head.pug
+  span(style = sent ? 'display:block' : 'display:none').new.badge Form Sent
+
+  form(action='/formsubmit' method='POST')
+    label(for='') Email
+    input(type='text' name='email')
+    //- Añadir código aquí
+    button(type='submit') Submit
