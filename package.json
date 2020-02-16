@@ -4,9 +4,11 @@
   "description": "node js, first steps",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "routes": "nodemon ./Rutas/routes.js",
     "ex:routes": "nodemon ./Exercises/2-rutas.js",
+    "ex:template": "nodemon ./Exercises/3-vistas.js",
+    "routes": "nodemon ./Rutas/routes.js",
+    "start": "nodemon index.js",
+    "template": "nodemon ./Vistas/templates.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +29,7 @@
   "homepage": "https://github.com/jasmo2/nodejs-makeitreal#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
   }
 }
