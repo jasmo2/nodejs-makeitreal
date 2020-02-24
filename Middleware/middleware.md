@@ -26,3 +26,26 @@ Y como ejemplo haremos un Logger-middleware.
 Cogerá la petición y la imprimirá.
 
 ###### Finalmente estos son middleware externos para Express [Middleware-Externos](https://github.com/senchalabs/connect#middleware)
+
+## Cookies
+
+Dado que las cookies hacen parte del middleware la mencionaremos brevemente en este capitulo.
+[https://github.com/expressjs/cookie-parser](https://github.com/expressjs/cookie-parser).
+
+Configuración
+
+```
+const express = require('express')
+const cookieParser = require('cookie-parser')
+
+const app = express()
+app.use(cookieParser())
+```
+
+`res.cookie('name', 'pedro', { domain: '.example.com', path: '/admin', secure: true });`
+
+##### De esta Forma se escribe sobre una cookie
+
+### ¿Para que sirven?
+
+sirven para almacenar información de seciones de los usuarios.
