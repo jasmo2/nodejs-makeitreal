@@ -8,8 +8,10 @@
  */
 const express = require('express')
 const app = express()
-const nombre = ''
-const template = ``
+const nombre = 'Juan Esteban'
+
+const template = `<h2>Hola cualquiercosa ${nombre}</h2>`
+
 app.get('/', (req, res) => {
   res.send(template)
 })
