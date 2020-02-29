@@ -22,7 +22,7 @@ app.get("/",(req, res) => {
 
 app.get("/user-template/:nombre",(req, res) => {
     const {nombre} = req.params;
-    res.render('template', { name: nombre })
+    res.render('ejemplo', { name: nombre })
 })
 
 
