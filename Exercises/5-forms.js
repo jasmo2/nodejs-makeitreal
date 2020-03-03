@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
 app.post('/formsubmit', (req, res) => {
   console.log('TCL: req', req.body)
 
+  // Hacer un redirect con la bandera "sent"
   res.render('formII', { sent: true })
 })
 

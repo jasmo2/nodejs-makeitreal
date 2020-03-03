@@ -13,9 +13,12 @@
  */
 
 const express = require('express')
+const bodyParser = require('body-parser')
+
 const app = express()
 
-app.use(express.urlencoded())
+// app.use(express.urlencoded())
+app.use(bodyParser.urlencoded({ extended: false }))
 app.set('view engine', 'pug')
 
 app.get('/', (req, res) => {
