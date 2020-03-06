@@ -17,31 +17,31 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('Index Page')
+  res.send('<h1>Estoy en get root</h1>')
 })
 
-app.get('/custom/', (req, res) => {
-  res.send('Get Page')
+app.get('/custom', (req, res) => {
+  res.send('<h1>Estoy en get custom</h1>')
 })
 
-app.get('/custom/:userId/:name/', (req, res) => {
-  const { userId, name } = req.params
-  res.send(`Get Page II id: ${userId} name: ${name}`)
+let cuatroVeinte = 'a'
+
+app.put('/custom/:id/:name/:pc', (req, res) => {
+  const { id, name, pc } = req.params
+  res.send(`hola esto es put con id: ${id} nombre: ${name} pc: ${pc}`)
 })
 
-app.put('/custom/:userId', (req, res) => {
-  const { userId } = req.params
-  console.log('TCL: userId', userId)
-  res.send(`Put Page ${userId}`)
-})
-app.delete('/custom/:userId', (req, res) => {
-  const { userId } = req.params
-
-  console.log('TCL: userId', userId)
-  res.send(`Delete Page ${userId}`)
-})
 app.post('/custom', (req, res) => {
-  res.send('Post Page')
+  res.send('Esto es post')
+})
+
+app.delete('/custom/:id', (req, res) => {
+  res.send('Esto es delete')
+})
+
+app.use((req, res, next) => {
+  res.status(404)
+  res.send('404: File Not Found Rogger II')
 })
 
 app.listen(9000, () => console.log('Listening on port 9000!'))

@@ -2,8 +2,17 @@ html
   include ./partials/head.pug
   span(style = sent ? 'display:block' : 'display:none').new.badge Form Sent
 
+  nav(style = invalid ? 'display:block' : 'display:none')
+    .nav-wrapper
+      .col.s12
+        label.breadcrumb Password Invalido
+
   form(action='/formsubmit' method='POST')
     label(for='') Email
     input(type='text' name='email')
+    label(for='') Password
+    input(type='password' name='password')
     //- Añadir código aquí
     button(type='submit') Submit
+
+
